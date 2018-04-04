@@ -73,47 +73,12 @@ By making a contribution to this project, I certify that:
 
 ## Getting Started
 
-Code.mil is a static web site generated using a piece of software called [Jekyll](https://jekyllrb.com/) which runs in the programming language [Ruby](https://www.ruby-lang.org). Development dependencies are managed using the [Bundler gem](http://bundler.io).
-
-This project uses Ruby version 2.5.0 which can be installed using a Ruby version manager like [rbenv](https://github.com/rbenv/rbenv).
-
-```
-rbenv install 2.5.0
-```
-
-Once you've installed Ruby 2.5.0, install the Bundler gem and Jekyll:
-
-```
-gem install bundler
-```
-
 ### Making Changes
 
-Now you're ready to [clone the repository](https://help.github.com/articles/cloning-a-repository/) locally and start making changes. All site pages are in the `_pages` directory and are in [Markdown format](https://daringfireball.net/projects/markdown/syntax). There is configuration in the `_config.yml` file as well as in the `_data` directory.
-
-Once you've cloned the repository you will need to install the dependencies using bundler:
-
-```
-bundle install
-```
-
-Once you're ready to run the site generator and see the site (locally), run:
-
-```
-bundle exec jekyll serve
-```
-
-Now you can head to `http://127.0.0.1:4000` to see the site locally!
 
 ### Code Style
 
-Code formatting conventions are defined in the `.editorconfig` file which uses the [EditorConfig syntax](http://editorconfig.org). There are plugins for a variety of editors that utilize the settings in the `.editorconfig` file. It is recommended that you install the EditorConfig plugin for your editor of choice.
-
-Your bug fix or feature addition won't be rejected if it runs afoul of any (or all) of these guidelines, but following the guidelines will definitely make everyone's lives a little easier.
-
 ## Submitting an Issue
-
-You should feel free to [submit an issue](https://github.com/Code-dot-mil/code.mil/issues) on our GitHub repository for anything you feel needs attention on the site. That includes content, functionality, design, or anything else!
 
 ### Submitting a Bug
 
@@ -127,16 +92,6 @@ When submitting a bug on the site please be sure to add extensive information ab
 
 ## Submitting Code
 
-When making your changes, it is highly encouraged that you use a [branch in Git](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging), then submit a [Pull Request (PR)](https://github.com/Code-dot-mil/code.mil/pulls) on GitHub. Your request will go through some automated checks using [Travis CI](https://travis-ci.org/Code-dot-mil/code.mil/), a continuous integration and deployment tool.
+When making your changes, it is highly encouraged that you use a [branch in Git](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging), then submit a [Pull Request (PR)](https://github.com/Code-dot-mil/code.mil/pulls) on GitHub. 
 
-After review by the Code.mil team your PR will either be commented on with a request for more information or changes, or it will be merged into the codebase which will automatically deploy the changes to [beta.code.mil](http://beta.code.mil).
-
-Assuming everything checks out, the Code.mil team will deploy the changes to [code.mil](http://code.mil) by creating a [new release](https://github.com/Code-dot-mil/code.mil/releases/new) on master with a tag like vX.X.X (where X is between 0 and 9), human readable title, and any other relevent context in the description.
-
-### Check Your Changes
-
-While there are automated checks on every PR, you can run the build process locally first to ensure things are working as expected before submitting your PR. This includes running check against the built HTML using a tool called [html-proofer](https://github.com/gjtorikian/html-proofer). You can run the build and the html-proofer tool using the following command:
-
-```
-./build
-```
+After review by the dtic.mil team your PR will either be commented on with a request for more information or changes, or it will be merged into the codebase.
