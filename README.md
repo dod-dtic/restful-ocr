@@ -45,6 +45,6 @@ When choosing between tesseract-ocr and tesseractjs performance is really where 
 If you wish to package the application for easy deployment to a server, this can be done easily using gulp.
 
 1. % npm install (This should already be done, but saying it again to be sure)
-2. % gulp dist
+2. % node ./node_modules/gulp/bin/gulp.js
 
 Thats it, there should now be a zip file located in the dist directory. You can unzip this on any server with nodejs installed and follow the Operation steps to run the webservice.
