@@ -10,7 +10,7 @@
     "config": "^1.24.0",
     "connect-busboy": "0.0.2",
     "cookie-parser": "~1.4.3",
-    "debug": "~2.2.0",
+    "debug": "^2.6.9",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "morgan": "^1.10.0",
