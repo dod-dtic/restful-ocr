@@ -16,7 +16,7 @@ restful-ocr currently supports two modes of recognizing text in images. It makes
 4. Edit config/default.json (set images path, enable or disable tesseract-ocr... this is the C installed tesseract rather than the native JS)
 
 
-### tesseract-ocr (_optional_)
+### tesseract-ocr (_recommended_)
 1. % brew install leptonica --with-libtiff
 2. % brew install imagemagick
 3. % brew install tesseract --with-all-languages
