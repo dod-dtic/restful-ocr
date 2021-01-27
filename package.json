@@ -17,7 +17,6 @@
     "ntesseract": "^0.2.8",
     "q": "^1.4.1",
     "serve-favicon": "^2.5.0",
-    "tesseract.js": "^1.0.10",
     "uid": "0.0.2"
   },
   "devDependencies": {

@@ -1,5 +1,4 @@
-var Tesseract = require('tesseract.js'),
-  fs = require('fs'),
+var fs = require('fs'),
   config = require('config'),
   tessocr = require('ntesseract'),
   Q = require("q");
@@ -7,31 +6,7 @@ var Tesseract = require('tesseract.js'),
 
 
 function run(filename) {
-  var useTesseract = config.get('tesseract-ocr.enabled');
-
-  if (useTesseract) {
     return tesseractCA(filename);
-  } else {
-    return tesseractjs(filename);
-  }
-
-}
-
-function tesseractjs(filename) {
-  var deferred = Q.defer();
-  Tesseract.recognize(filename)
-    .progress(function (p) {
-      //Status messages
-    })
-    .catch(function (err) {
-      deferred.reject(err);
-    })
-    .then(function (result) {
-      deferred.resolve(result.text);
-    });
-
-  return deferred.promise;
-
 }
 
 function tesseractCA(filename) {
